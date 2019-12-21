@@ -1,0 +1,666 @@
+@font-face{
+	font-family: "PN SB";
+	src:url('../fonts/ProximaNova-Semibold.ttf') format("ttf"), 
+		url('../fonts/ProximaNova-Semibold.woff') format("woff");
+}
+@font-face{
+	font-family: "PN EB";
+	src:url('../fonts/ProximaNova-Extrabld.ttf') format("ttf"),
+		url('../fonts/ProximaNova-Extrabld.woff') format("woff");
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+}
+
+body{
+	font-size: 16px;
+}
+
+.container{
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.dn{
+	display: none;
+	
+}
+.bg__yellow{
+	background: -webkit-linear-gradient(rgba(246,183,26,0.5830707282913166) 0%, rgba(253,182,6,1) 87%);
+	background: -o-linear-gradient(rgba(246,183,26,0.5830707282913166) 0%, rgba(253,182,6,1) 87%);
+	background: linear-gradient(rgba(246,183,26,0.5830707282913166) 0%, rgba(253,182,6,1) 87%);
+}
+.wrapper{
+	position: relative;
+}
+/*Header*/
+header{
+	font-family: "PN SB",sans-serif;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.menu-bar{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+.burger-line:first-child{
+	margin-top: 0 !important;
+}
+.menu{
+	transition: transform .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #202020;
+    padding: 70px 80PX;
+    width: 400px;
+    z-index: 100;
+}
+.menu-item{
+	margin-top: 20px;
+	transition: opacity .3s ease,margin-left .3s ease;
+}
+.menu-item:hover{
+	opacity: .7;
+	margin-left: 5px;
+}
+.menu-link{
+	color:#fff;
+	font-size: 20px;
+	text-transform:uppercase;
+
+}
+.menu_show{
+	transform: translateX(0px);
+}
+.menu_hide{
+	transform: translateX(-435px);
+}
+.burger-line{
+	border: 2px solid #000;
+    width: 27px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+.menu-bar__menu-cart{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.container__menu__position{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cart__buy{
+	position: relative;
+	margin-right: 50px;
+}
+.cart__buy a {
+	color:#000;
+}
+.counter__buy{
+	position:absolute;
+	top: 0;
+	right: 0;
+	padding: 4px 6.5px 3px 6.5px;
+	background:#ff0d40;
+	border-radius: 50%;
+	top: -15px;
+    right: -15px;
+}
+.counter__buy p {
+	font-size: 10px;
+	color:#FFF;
+	font-weight: bold;
+}
+
+
+/*Intro*/
+.inner__intro{
+	position: relative;
+	height: 75vh;
+}
+.inner__intro h1 {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "PN SB",sans-serif;
+	font-size: 66px;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-52%,-120%);
+}
+.img__center__intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -46%);
+}
+
+/*Catalog*/
+.catalog__product{
+	background: #ffffff;
+	margin-top: 60px;
+}
+/*Sprite*/
+.sprite__clothes{
+	font-family: "PN SB",sans-serif;
+}
+.sprite__clothes__btn{
+	cursor: pointer;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.sprite__block__clothes{
+	margin-bottom: 66px;
+	padding: 35px 40px;
+	border:1px solid #e2dede;
+	border-radius: 4px;
+}
+.inner__catalog__product{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.clothes-item:first-child{
+	margin-top: 0 !important;		
+}
+.clothes-item{
+	margin-top: 30px;
+	cursor: pointer;
+	transition: margin-left .3s ease;
+}
+.clothes-item:hover{
+	margin-left: 5px;
+
+}
+.clothes-link{
+	color:#000;
+	text-transform: uppercase;
+	font-family: "PN SB",sans-serif;
+}
+.clothes-link-all{
+	font-weight: bold;
+}
+.clothes-link-all img {
+	margin-left: 120px;
+}
+.sprite__clothes__btn img{
+	margin-left: 65px;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.rotateUp{
+	animation: rotateUp .3s  linear;    
+	animation-fill-mode: forwards;
+}
+.rotateDown{
+	animation: rotateDown .3s  linear;    
+	animation-fill-mode: forwards;
+}
+@keyframes rotateUp {
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(180deg);
+	}
+}
+@keyframes rotateDown {
+	0%{
+		transform:rotate(180deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+/*Brend*/
+.inner__brend__shop{
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.brend__name:first-child{
+	margin-top: 0 !important;
+}
+.brend__name{
+	margin-top: 40px;
+	transition:margin-left .3s ease;
+	cursor: pointer;
+}
+.brend__name:hover{
+	margin-left: 5px;
+}
+.link__brend{
+	color:#000;
+	font-size: 17px;
+	font-family: "PN SB",sans-serif;
+	text-transform: uppercase;
+}
+.separation__line{
+    background: #e3e3e3;
+    height: 1px;
+    border: 0;
+}
+/*End brend*/
+/*shop about*/
+.inner__about__shop{
+	margin-left: 40px;
+}
+.about__shop{
+	margin-top: 40px;
+}
+.link__about__shop{
+	color:#000;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "PN EB",sans-serif;
+	text-transform: uppercase;
+}
+.about__shop__name{
+	cursor: pointer;
+	transition:margin-left .3s ease;
+	margin-top: 25px;
+}
+.about__shop__name:hover{
+	margin-left: 5px;
+}
+.about__shop__name:first-child{
+	margin-top: 0 !important;
+}
+/*End sprite*/
+
+/*products*/
+
+.inner__catalog{
+	/*margin-top: 130px;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.brends__working__with__us{
+	text-align: right;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+.mt__by__brends{
+	margin-top: 120px;
+}
+.brends__working__with__us img {
+	vertical-align: middle;
+}
+.alt__products{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 25px;
+	margin-left: 25px;
+
+}
+.alt__products a{
+	transition: opacity .3s linear;
+}
+.alt__products a:hover{
+	opacity: .8;
+}
+.degenerate__left__products,.degenerate__horizontal__clothes,.degenerate__right__products,.degenerate__mini__with__big{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.big__size__product__link:first-child{
+	margin-top: 0;
+}
+
+
+.big__size__product__link{
+	border:1px solid #e2dede;
+	border-radius: 4px;
+	width: 405px;
+	height: 399px;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0 55px;
+	position: relative;
+}
+.img__big__size{
+    width: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.name__big__size{
+	font-size: 18px;
+	color:#000;
+	font-family: "PN SB",sans-serif;
+	text-transform: uppercase;
+	width: 100%;
+    top: 30px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.sidebar__helper{
+	z-index: 20;
+}
+.price__big__size{
+	font-size: 18px;
+	color:#000;
+	font-family: "PN EB",sans-serif;
+	text-transform: uppercase;
+    bottom: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.mini__size__product__link:first-child{
+	margin-top: 0;
+}
+.mini__size__product__link{
+	border:1px solid #e2dede;
+	border-radius: 4px;
+	width: 265px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 0 35px;
+	height: 262.4px;
+	display: block;
+	position: relative;
+}	
+
+.img__mini__size{
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.name__mini__size{
+	width: 100%;
+    top: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+	font-size: 18px;
+	color:#000;
+	font-family: "PN SB",sans-serif;
+	text-transform: uppercase;
+}
+.price__mini__size{
+	font-size: 18px;
+	color:#000;
+	font-family: "PN EB",sans-serif;
+	text-transform: uppercase;
+    bottom: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.degenerate__horizontal__clothes{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.degenerate__horizontal__clothes .mini__size__product__link:first-child{
+	margin-left: 0 !important;
+}
+.degenerate__horizontal__clothes .mini__size__product__link {
+	width: 205px;
+	height: 180px;
+}
+.alt__products__hor__cl{
+	flex-direction: column;
+}
+
+
+.medium-big__size__product__link{
+	border:1px solid #e2dede;
+	border-radius: 4px;
+	width: 405px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 0 35px;
+	height: 330px;
+	display: block;
+	position: relative;
+}
+.medium-mini__size__product__link{
+	border:1px solid #e2dede;
+	border-radius: 4px;
+	width: 265px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 0 35px;
+	height: 330px;
+	display: block;
+	position: relative;
+}
+
+
+.name__medium-big__size{
+	width: 100%;
+    top: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+	font-size: 18px;
+	color:#000;
+	font-family: "PN SB",sans-serif;
+	text-transform: uppercase;
+}
+.price__medium-big__size{
+	font-size: 18px;
+	color:#000;
+	font-family: "PN EB",sans-serif;
+	text-transform: uppercase;
+    bottom: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.img__medium-big__size{
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name__medium-mini__size{
+	width: 100%;
+    top: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+	font-size: 18px;
+	color:#000;
+	font-family: "PN SB",sans-serif;
+	text-transform: uppercase;
+}
+.price__medium-mini__size{
+	font-size: 18px;
+	color:#000;
+	font-family: "PN EB",sans-serif;
+	text-transform: uppercase;
+    bottom: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.img__medium-mini__size{
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.reunion__big__with__mini{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Sale product*/
+.sale__product{
+	background:#f1f1f1!important;
+}
+.old__price{
+	color:#ff0d40;
+	position: absolute;
+	font-size: 22px;
+	top: -12px;
+	text-decoration: line-through;
+}
+/*.sale__product > .big__size__product  .old__price,.sale__product > .medium-big__size__product  .old__price{
+	transform: translateX(55%);
+
+}*/
+/*.sale__product > .mini__size__product > .old__price , .sale__product > .medium-mini__size__product > .old__price{
+	transform: translateX(-29%);
+
+}*/
+
+
+
+.sale__product > .big__size__product > .sale__product__name{
+	top: 50px;
+
+}
+.sale__product > .medium-big__size__product > .sale__product__name{
+	top: 40px;
+
+}
+
+.sale__product > .mini__size__product > .sale__product__name ,.sale__product > .medium-mini__size__product > .sale__product__name{
+   top: 40px;
+
+}
+.sale__product__name{
+	color:#ff0d40;
+    font-weight: bold;
+}
+/*Update*/
+.load__more{
+	margin-top: 75px;
+	margin-bottom: 70px;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align:center;
+}
+.update__assortment{
+	text-transform:uppercase;
+	font-size: 18px;
+	font-family: "PN",sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+.update__assortment__plus{
+	margin-left: 10px;
+}
+/*end catalog*/
+/*Footer*/
+footer{
+	background:#202020;
+	text-align:center;
+	color:#fff;
+	padding-top: 90px;
+	padding-bottom: 25px;
+}
+footer h2 {
+	font-family: "PN EB",sans-serif;
+	font-size: 33px;
+	text-transform:uppercase;
+}
+footer p {
+	font-family: "PN SB",sans-serif;
+	font-size: 15px;
+}
+.info__email{
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+.created__site{
+	margin-top: 65px;
+	margin-bottom: 36px;
+}
+.soc__img{
+    color:#515151;
+}
+.soc__img:first-child i{
+	padding: 10px 13px;
+	margin-right: 15px;
+}
+.soc__img:nth-child(2) i{
+	padding: 10px;
+	margin-left: 15px;
+}
+.created__site a {
+	color:#ffc600;
+}
+.soc__img i {
+	font-size: 19px;
+    border:2px solid #515151;
+    border-radius: 50%;
+    color:#515151;
+    transition:opacity .3s ease;
+}
+.soc__img i:hover {
+	opacity: .7;
+}

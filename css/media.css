@@ -1,0 +1,143 @@
+@media only screen and (max-width: 1075px){
+	.big__size__product__link{
+		width: 325px;
+    	height: 335px;
+    	padding: 0 45px;
+	}
+	.img__big__size,.img__medium-big__size{
+		width: 170px;
+	}
+
+	.img__mini__size{
+		width: 130px;
+	}
+	.mini__size__product__link{
+		height: 220px;
+		width: 235px;
+	}
+	.medium-big__size__product__link{
+		width: 330px;
+	}
+	.img__medium-mini__size{
+		width: 120px;
+	}
+	.inner__intro h1{
+		font-size: 54px;
+		transform: translate(-50%,-180%);
+	}
+	.degenerate__horizontal__clothes .mini__size__product__link {
+	    width: 175px;
+	    height: 160px;
+	}
+	.reunion__big__with__mini{
+		flex-direction: column;
+	}
+	.reunion__big__with__mini a {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 965px){
+	.alt__products{
+		flex-direction: column;
+	}
+	.degenerate__left__products a , .degenerate__right__products a , .degenerate__horizontal__clothes  a {
+		width: 100%!important;
+	}
+/*	.degenerate__horizontal__clothes {
+		flex-direction: column;
+		margin-bottom: 0;
+	}*/
+	.img__center__intro{
+		width: 375px;
+		transform: translate(-43%, -58%);
+	}
+	.mt__by__brends{
+		margin-top: 18px;
+	}
+	.mini__size__product__link{
+		margin-bottom: 30px;
+	}
+/*	.degenerate__horizontal__clothes .mini__size__product__link{
+		margin-bottom: 30px;
+	}*/
+	.medium-big__size__product__link , .medium-mini__size__product__link{
+		margin-bottom: 30px;
+	}
+	.menu{
+		width: 300px;
+		padding: 50px 70px;
+	}
+	.degenerate__horizontal__clothes{
+		display: none;
+		
+	}
+	.big__size__product__link,.mini__size__product__link , .medium-big__size__product__link , .medium-mini__size__product__link,.mini__size__product__link{
+		height:300px!important; 
+	}
+	.img__big__size, .img__medium-big__size,.img__medium-big__size ,.img__mini__size {
+		width: 145px!important;
+	}
+}
+@media only screen and (max-width:795px){
+	.inner__catalog__product{
+		flex-direction: column;
+	}
+	.brends__working__with__us{
+		margin-top: 20px;
+	}
+	.inner__intro{
+		height: 50vh;
+	}
+	.img__center__intro{
+		width: 250px;
+		transform: translate(-43%, -62%);
+	}
+	.inner__intro h1{
+		font-size: 40px;
+	}
+	.brends__working__with__us{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 400px){
+	.sidebar__helper{
+		text-align: center;
+	}
+	.inner__brend__shop,.inner__about__shop,.sprite__clothes__btn {
+		margin-left: 0 !important;
+	}
+	.sprite__clothes__btn img{
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	.menu {
+	    width: 200px;
+	    padding: 50px 40px;
+	}
+	.inner__intro h1{
+		font-size: 30px;
+    	transform: translate(-52%,-290%);
+	}
+	.menu-link{
+		font-size: 18px;
+	}
+	.alt__products{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.img__big__size, .img__medium-big__size, .img__medium-big__size, .img__mini__size {
+	    width: 110px!important;
+	}
+	.big__size__product__link, .mini__size__product__link, .medium-big__size__product__link, .medium-mini__size__product__link, .mini__size__product__link {
+	    height: 265px!important;
+	}
+	.old__price{
+		font-size: 20px;
+	}
+	.soc__img:first-child i{
+		margin-right: 0;
+	}
+	.clothes-link-all img {
+	    margin-left: 50px;
+	}
+}
